@@ -124,7 +124,7 @@ exports.updateProfile = async (req, res) => {
   }
 };
 
-// Assuming you're using a file upload library like Multer
+
 exports.uploadProfileImage = async (req, res) => {
   try {
     const { userId } = req.params;

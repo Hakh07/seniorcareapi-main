@@ -44,15 +44,6 @@ module.exports = (sequelize, DataTypes) => {
         }
     })
 
-    // Rating.associate = function (models) {
-    //     Rating.belongsTo(models.Doctor, {
-    //         as: {
-    //             singular: 'doctor',
-    //             plural: 'doctors'
-    //         },
-    //         foreignKey: 'doctor_id'
-    //     });
-    // }
-
+  
     return Rating;
 }

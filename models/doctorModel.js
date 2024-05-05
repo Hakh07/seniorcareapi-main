@@ -314,19 +314,6 @@ module.exports = (sequelize, DataTypes) => {
       },
     }
   );
-  // Doctor.associate = function (models) {
-  //     Doctor.hasMany(models.Rating, {
-  //         as: {
-  //             singular: 'rating',
-  //             plural: 'ratings'
-  //         }
-  //     });
-  //     Doctor.hasMany(models.Appointment, {
-  //         as: {
-  //             singular: 'appointment',
-  //             plural: 'appointments'
-  //         }
-  //     });
-  // }
+  
   return Doctor;
 };

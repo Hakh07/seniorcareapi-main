@@ -33,16 +33,6 @@ sequelize
     console.log("Unable to connect to the database:" + err);
   });
 
-// fs
-//     .readdirSync(__dirname)
-//     .filter(file => {
-//         return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
-//     })
-//     .forEach(file => {
-//         const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
-//         db[model.name] = model;
-//     });
-
 db.users = require("./userModel.js")(sequelize, DataTypes);
 db.prescriptions = require("./prescriptionModel.js")(sequelize, DataTypes);
 db.doctors = require("./doctorModel.js")(sequelize, DataTypes);

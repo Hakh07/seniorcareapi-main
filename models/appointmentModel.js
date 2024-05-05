@@ -77,13 +77,6 @@ module.exports = (sequelize, DataTypes) => {
             plural: 'appointments',
         }
     });
-    // Appointment.associate = function (models) {
-    //     Appointment.belongsTo(models.Doctor, {
-    //         as: {
-    //             singular: 'doctor',
-    //             plural: 'doctors'
-    //         }
-    //     });
-    // }
+   
     return Appointment;
 }
